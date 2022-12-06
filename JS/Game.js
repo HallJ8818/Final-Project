@@ -1,6 +1,8 @@
 const game = document.getElementById('game');
 const scoreDisplay = document.getElementById('score-count');
 
+let score = 0;
+
 const jeaopardyCategories = [
   {
     genre: "WHO",
@@ -212,8 +214,6 @@ function addCategory(category){
     }
 
     card.setAttribute('data-question', question.question);
-    card.setAttribute('data-answer-1', question.answers[0]);
-    card.setAttribute('data-answer-2', question.answers[1]);
     card.setAttribute('data-correct', question.correct);
     card.setAttribute('data-value', card.getInnerHTML());
 
@@ -232,11 +232,48 @@ function flipCard(){
   const textDisplay = document.createElement('div');
   textDisplay.classList.add('card-text');
   textDisplay.innerText = this.getAttribute('data-question')
-  const firstButton = document.createElement('button');
-  const secondButton = document.createElement('button');
-  firstButton.classList.add('first-button');
-  secondButton.classList.add('second-button');
-  firstButton.innerText = this.getAttribute('data-Answer-1');
-  secondButton.innerText = this.getAttribute('data-Answer-2');
-  this.append(textDisplay, firstButton, secondButton)
+  const textBox = document.createElement('input');
+  textBox.setAttribute('type', 'text');
+  textBox.classList.add('text-box');
+  const submit = document.createElement('button');
+  submit.setAttribute('type', 'submit');
+  submit.classList.add('submit-button');
+  submit.innerText = 'Submit';
+  submit.addEventListener('click', getResult);
+  this.append(textDisplay, textBox, submit);
+
+  const allCards = Array.from(document.querySelectorAll('.card'));
+  allCards.forEach(card => card.removeEventListener('click', flipCard));
+}
+
+function getResult(){
+  const allCards = Array.from(document.querySelectorAll('.card'));
+  allCards.forEach(card => card.addEventListener('click', flipCard));
+
+  const cardOfButton = this.parentElement;
+  const answer = document.getElementsByClassName("text-box").value;
+
+  console.log(answer);
+
+  console.log(cardOfButton);
+
+  // does not read answer value, declares it as undefined
+  if(cardOfButton.getAttribute('data-correct') == answer){
+    score = score + parseInt(cardOfButton.getAttribute('data-value'));
+    scoreDisplay.innerText = score;
+    setTimeout(() => {
+      while(cardOfButton.firstChild){
+        cardOfButton.removeChild(cardOfButton.lastChild);
+      }
+      cardOfButton.innerText = cardOfButton.getAttribute('data-value');
+    }, 100);
+  } else {
+    setTimeout(() => {
+      while(cardOfButton.firstChild){
+        cardOfButton.removeChild(cardOfButton.lastChild);
+      }
+      cardOfButton.innerText = 0;
+    }, 100);
+  }
+  cardOfButton.removeEventListener('click', flipCard);
 }
