@@ -35,3 +35,41 @@ nav a[aria-current='page'] {
   color: #000;
   background-color: #d4d4d4;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+   background: #222;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  padding: 1em;
+  background: linear-gradient(180deg, #2E2E3A 0%, #0C0C2C 100%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game {
+  display: flex;
+
+  background-color: #171718;
+}
+
+.card{
+  width: 200px;
+  height: 100px;
+  background-color: #0120CB;
+  border-left: solid rgb(19,19,160) 10px;
+  border-right: solid rgb(19,19,91) 10px;
+  border-top: solid rgb(19,19,200) 10px;
+  border-bottom: solid rgb(19,19,89) 10px;
+  text-align: center;
+  font-size: 50px;
+  margin: 5px;
+  padding:0px;
+}
