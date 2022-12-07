@@ -11,7 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-/*firebase.firestore().collection("Leaderboard").onSnapshot(function(querySnapShot){
+firebase.firestore().collection("Leaderboard").onSnapshot(function(querySnapShot){
   var n1 = 0; // how many A's
   var n2 = 0; // how many B's
   var n3 = 0; // how many C's
@@ -21,19 +21,35 @@ firebase.initializeApp(firebaseConfig);
   querySnapShot.forEach(function(doc){
     console.log("document -- ", doc.data().Score);
     var s = doc.data().Score;
+    var n = doc.data().Name;
     array.push(s);
     console.log(array);
-    switch(s){
-      case "A": n1++; $('#ans1').text(n1);break;
-      case "B": n2++; $('#ans2').text(n2);break;
-      case "C": n3++; $('#ans3').text(n3);break;
-      case "D": n4++; $('#ans4').text(n4);break;
-      case "E": n5++; $('#ans5').text(n5);break;
-    }
+    array.sort(function(a, b) {
+      return b - a;
+    });
 
   });
+
+  querySnapShot.forEach(function(doc){
+    var s = doc.data().Score;
+    var n = doc.data().Name;
+
+    switch(s){
+      case array[0]: $('#player1n').text(n); $('#ans1').text(s);break;
+      case array[1]: $('#player2n').text(n); $('#ans2').text(s);break;
+      case array[2]: $('#player3n').text(n); $('#ans3').text(s);break;
+      case array[3]: $('#player4n').text(n); $('#ans4').text(s);break;
+      case array[4]: $('#player5n').text(n); $('#ans5').text(s);break;
+      case array[5]: $('#player6n').text(n); $('#ans6').text(s);break;
+      case array[6]: $('#player7n').text(n); $('#ans7').text(s);break;
+      case array[7]: $('#player8n').text(n); $('#ans8').text(s);break;
+      case array[8]: $('#player9n').text(n); $('#ans9').text(s);break;
+      case array[9]: $('#player10n').text(n); $('#ans10').text(s);break;
+    }
+  });
   
+  console.log(array)
   console.log(querySnapShot.size);
   querySnapShot.forEach(doc => console.log(doc.data()));
 
-});*/
+});

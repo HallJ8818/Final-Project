@@ -38,152 +38,552 @@ let score = 0;
 
 const jeaopardyCategories = [
   {
-    genre: "WHO",
+    genre: "Anime",
     questions:[
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who is narutos dad?(F)',
+        correct: 'Minato',
         level: '100'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who is Kiritos girlfriend?(F)',
+        correct: 'Asuna',
         level: '200'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'How many kids does Goku and Chi Chi have?',
+        correct: '2',
         level: '300'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is Gokus favorite move?',
+        correct: 'Kamehameha',
         level: '400'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What was Kirito called in Season 1?',
+        correct: 'Beater',
         level: '500'
+      },
+      {
+        question: 'Who was Narutos first kiss?(F)',
+        correct: 'Sasuke',
+        level: '600'
+      },
+      {
+        question: 'Who had the fourth Dragon Ball(F)?',
+        correct: 'Gohan',
+        level: '700'
+      },
+      {
+        question: 'Vegeta killd who before fighting Goku?(F)',
+        correct: 'Nappa',
+        level: '800'
+      },
+      {
+        question: 'Alucard backwards spells what?',
+        correct: 'Dracula',
+        level: '900'
+      },
+      {
+        question: 'What is the number of copies did Alucard have to kill in order to be himself?',
+        correct: '3,424,867',
+        level: '1000'
       }
     ]
   },
   {
-    genre: "WHEN",
+    genre: "Music",
     questions:[
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who is in the music group Silk Sonic?',
+        correct: 'Anderson .Paak And Bruno Mars',
         level: '100'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who made the song Bad?',
+        correct: 'Michael Jackson',
         level: '200'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What album did JID make this year?',
+        correct: 'The Forever Story',
         level: '300'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who made the soundtrack for One Piece Film Red?',
+        correct: 'Ado',
         level: '400'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What MJ album came out in 1979?',
+        correct: 'Off The Wall',
         level: '500'
+      },
+      {
+        question: 'Metro Boomin came out with what new album?',
+        correct: 'Heroes And Villians',
+        level: '600'
+      },
+      {
+        question: 'Countryd look Good on you by Frank Ray came out in what year?',
+        correct: '2021',
+        level: '700'
+      },
+      {
+        question: 'The new japanese song Shinunoga E-Wa who?',
+        correct: 'Fujii Kaze',
+        level: '800'
+      },
+      {
+        question: 'What song did Rihanna make for Black Panther?',
+        correct: 'Lift Me Up',
+        level: '900'
+      },
+      {
+        question: 'Fetty Wap made what song for Thanksgiving',
+        correct: 'Sweet Yamz',
+        level: '1000'
       }
     ]
   },
   {
-    genre: "WHERE",
+    genre: "Games",
     questions:[
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What game is Kratos from?',
+        correct: 'God Of War',
         level: '100'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What game is Captain Price from?',
+        correct: 'Call Of Duty',
         level: '200'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'When you make a character it is called?',
+        correct: 'Create A Character',
         level: '300'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'The place you put your pokemon is called?',
+        correct: 'PC',
         level: '400'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What do you do after hitting level 55 in Call of Duty?',
+        correct: 'Prestige',
         level: '500'
+      },
+      {
+        question: 'What game does Freddy Frazbear come from?',
+        correct: "Five Nights At Freddy's",
+        level: '600'
+      },
+      {
+        question: 'How many Call of Duty games are there?',
+        correct: '42',
+        level: '700'
+      },
+      {
+        question: 'What animal is knuckles?',
+        correct: 'Echidna',
+        level: '800'
+      },
+      {
+        question: 'What group is the Overwatch character Reaper from?',
+        correct: 'Blackwatch',
+        level: '900'
+      },
+      {
+        question: 'How many games has both Sonic and Mario been in?',
+        correct: '15',
+        level: '1000'
       }
     ]
   },
   {
-    genre: "WHY",
+    genre: "Math",
     questions:[
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is 1+1?',
+        correct: '2',
         level: '100'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is 2*4?',
+        correct: '8',
         level: '200'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is 8+5?',
+        correct: '13',
         level: '300'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is 6*7?',
+        correct: '42',
         level: '400'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What is 5*10+8?',
+        correct: '58',
         level: '500'
+      },
+      {
+        question: 'What is 5*5*8?',
+        correct: '200',
+        level: '600'
+      },
+      {
+        question: 'What is 2+4?',
+        correct: '6',
+        level: '700'
+      },
+      {
+        question: 'What is 6*7+5?',
+        correct: '47',
+        level: '800'
+      },
+      {
+        question: 'What is 10*0+85?',
+        correct: '85',
+        level: '900'
+      },
+      {
+        question: 'What is 1*0?',
+        correct: '0',
+        level: '1000'
       }
     ]
   },
   {
-    genre: "HOW",
+    genre: "Star Wars",
     questions:[
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What color is the Mandalorian armor at the start of the show?',
+        correct: 'Red',
         level: '100'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What color is Boba Fetts armor?',
+        correct: 'Green',
         level: '200'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What color is the Dark Saber?',
+        correct: 'Black',
         level: '300'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'What color is Mace Windus lightsaber?',
+        correct: 'Purple',
         level: '400'
       },
       {
-        question: 'Who wrote Harry Potter?',
-        correct: 'JK Rowling',
+        question: 'Who uses lightning as a weapon?',
+        correct: 'Emperor Palpatine',
         level: '500'
+      },
+      {
+        question: 'What bloodline is Rey from',
+        correct: 'Palpatine',
+        level: '600'
+      },
+      {
+        question: 'Who also uses Reys lightsaber?',
+        correct: 'Finn',
+        level: '700'
+      },
+      {
+        question: 'Who plays Lando Calrissian in Solo?',
+        correct: 'Donald Glover',
+        level: '800'
+      },
+      {
+        question: 'What color are Ashokas lightsaber?',
+        correct: 'White',
+        level: '900'
+      },
+      {
+        question: 'Who uses lightning as a weapon?',
+        correct: 'Emperor Palpatine',
+        level: '1000'
+      }
+    ]
+  },
+  {
+    genre: "Cars",
+    questions:[
+      {
+        question: 'W)',
+        correct: 'Minato',
+        level: '100'
+      },
+      {
+        question: 'Who is Kiritos girlfriend?(F)',
+        correct: 'Asuna',
+        level: '200'
+      },
+      {
+        question: 'How many kids does Goku and Chi Chi have?',
+        correct: '2',
+        level: '300'
+      },
+      {
+        question: 'What is Gokus favorite move?',
+        correct: 'Kamehameha',
+        level: '400'
+      },
+      {
+        question: 'What was Kirito called in Season 1?',
+        correct: 'Beater',
+        level: '500'
+      },
+      {
+        question: 'Who was Narutos first kiss?(F)',
+        correct: 'Sasuke',
+        level: '600'
+      },
+      {
+        question: 'Who had the fourth Dragon Ball(F)?',
+        correct: 'Gohan',
+        level: '700'
+      },
+      {
+        question: 'Vegeta killd who before fighting Goku?(F)',
+        correct: 'Nappa',
+        level: '800'
+      },
+      {
+        question: 'Alucard backwards spells what?',
+        correct: 'Dracula',
+        level: '900'
+      },
+      {
+        question: 'What is the number of copies did Alucard have to kill in order to be himself?',
+        correct: '3,424,867',
+        level: '1000'
+      }
+    ]
+  },
+  {
+    genre: "Music",
+    questions:[
+      {
+        question: 'Who is in the music group Silk Sonic?',
+        correct: 'Anderson .Paak And Bruno Mars',
+        level: '100'
+      },
+      {
+        question: 'Who made the song Bad?',
+        correct: 'Michael Jackson',
+        level: '200'
+      },
+      {
+        question: 'What album did JID make this year?',
+        correct: 'The Forever Story',
+        level: '300'
+      },
+      {
+        question: 'Who made the soundtrack for One Piece Film Red?',
+        correct: 'Ado',
+        level: '400'
+      },
+      {
+        question: 'What MJ album came out in 1979?',
+        correct: 'Off The Wall',
+        level: '500'
+      },
+      {
+        question: 'Metro Boomin came out with what new album?',
+        correct: 'Heroes And Villians',
+        level: '600'
+      },
+      {
+        question: 'Countryd look Good on you by Frank Ray came out in what year?',
+        correct: '2021',
+        level: '700'
+      },
+      {
+        question: 'The new japanese song Shinunoga E-Wa who?',
+        correct: 'Fujii Kaze',
+        level: '800'
+      },
+      {
+        question: 'What song did Rihanna make for Black Panther?',
+        correct: 'Lift Me Up',
+        level: '900'
+      },
+      {
+        question: 'Fetty Wap made what song for Thanksgiving',
+        correct: 'Sweet Yamz',
+        level: '1000'
+      }
+    ]
+  },
+  {
+    genre: "Games",
+    questions:[
+      {
+        question: 'What game is Kratos from?',
+        correct: 'God Of War',
+        level: '100'
+      },
+      {
+        question: 'What game is Captain Price from?',
+        correct: 'Call Of Duty',
+        level: '200'
+      },
+      {
+        question: 'When you make a character it is called?',
+        correct: 'Create A Character',
+        level: '300'
+      },
+      {
+        question: 'The place you put your pokemon is called?',
+        correct: 'PC',
+        level: '400'
+      },
+      {
+        question: 'What do you do after hitting level 55 in Call of Duty?',
+        correct: 'Prestige',
+        level: '500'
+      },
+      {
+        question: 'What game does Freddy Frazbear come from?',
+        correct: "Five Nights At Freddy's",
+        level: '600'
+      },
+      {
+        question: 'How many Call of Duty games are there?',
+        correct: '42',
+        level: '700'
+      },
+      {
+        question: 'What animal is knuckles?',
+        correct: 'Echidna',
+        level: '800'
+      },
+      {
+        question: 'What group is the Overwatch character Reaper from?',
+        correct: 'Blackwatch',
+        level: '900'
+      },
+      {
+        question: 'How many games has both Sonic and Mario been in?',
+        correct: '15',
+        level: '1000'
+      }
+    ]
+  },
+  {
+    genre: "Math",
+    questions:[
+      {
+        question: 'What is 1+1?',
+        correct: '2',
+        level: '100'
+      },
+      {
+        question: 'What is 2*4?',
+        correct: '8',
+        level: '200'
+      },
+      {
+        question: 'What is 8+5?',
+        correct: '13',
+        level: '300'
+      },
+      {
+        question: 'What is 6*7?',
+        correct: '42',
+        level: '400'
+      },
+      {
+        question: 'What is 5*10+8?',
+        correct: '58',
+        level: '500'
+      },
+      {
+        question: 'What is 5*5*8?',
+        correct: '200',
+        level: '600'
+      },
+      {
+        question: 'What is 2+4?',
+        correct: '6',
+        level: '700'
+      },
+      {
+        question: 'What is 6*7+5?',
+        correct: '47',
+        level: '800'
+      },
+      {
+        question: 'What is 10*0+85?',
+        correct: '85',
+        level: '900'
+      },
+      {
+        question: 'What is 1*0?',
+        correct: '0',
+        level: '1000'
+      }
+    ]
+  },
+  {
+    genre: "Star Wars",
+    questions:[
+      {
+        question: 'What color is the Mandalorian armor at the start of the show?',
+        correct: 'Red',
+        level: '100'
+      },
+      {
+        question: 'What color is Boba Fetts armor?',
+        correct: 'Green',
+        level: '200'
+      },
+      {
+        question: 'What color is the Dark Saber?',
+        correct: 'Black',
+        level: '300'
+      },
+      {
+        question: 'What color is Mace Windus lightsaber?',
+        correct: 'Purple',
+        level: '400'
+      },
+      {
+        question: 'Who uses lightning as a weapon?',
+        correct: 'Emperor Palpatine',
+        level: '500'
+      },
+      {
+        question: 'What bloodline is Rey from',
+        correct: 'Palpatine',
+        level: '600'
+      },
+      {
+        question: 'Who also uses Reys lightsaber?',
+        correct: 'Finn',
+        level: '700'
+      },
+      {
+        question: 'Who plays Lando Calrissian in Solo?',
+        correct: 'Donald Glover',
+        level: '800'
+      },
+      {
+        question: 'What color are Ashokas lightsaber?',
+        correct: 'White',
+        level: '900'
+      },
+      {
+        question: 'Who uses lightning as a weapon?',
+        correct: 'Emperor Palpatine',
+        level: '1000'
       }
     ]
   }
@@ -219,6 +619,21 @@ function addCategory(category){
     }
     if(question.level === '500'){
       card.innerText = 500;
+    }
+    if(question.level === '600'){
+      card.innerText = 600;
+    }
+    if(question.level === '700'){
+      card.innerText = 700;
+    }
+    if(question.level === '800'){
+      card.innerText = 800;
+    }
+    if(question.level === '900'){
+      card.innerText = 900;
+    }
+    if(question.level === '1000'){
+      card.innerText = 1000;
     }
 
     card.setAttribute('data-question', question.question);

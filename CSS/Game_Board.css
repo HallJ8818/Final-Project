@@ -11,7 +11,7 @@ body {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: top;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
@@ -36,7 +36,7 @@ nav a[aria-current='page'] {
   background-color: #d4d4d4;
 }
 
-html, body {
+html, main {
   height: 100%;
 }
 
