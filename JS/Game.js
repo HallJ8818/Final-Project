@@ -71,12 +71,12 @@ const jeaopardyCategories = [
         level: '600'
       },
       {
-        question: 'Who had the fourth Dragon Ball(F)?',
+        question: 'Who had the four star Dragon Ball(F)?',
         correct: 'Gohan',
         level: '700'
       },
       {
-        question: 'Vegeta killd who before fighting Goku?(F)',
+        question: 'Vegeta killed who before fighting Goku?(F)',
         correct: 'Nappa',
         level: '800'
       },
@@ -316,273 +316,273 @@ const jeaopardyCategories = [
     genre: "Cars",
     questions:[
       {
-        question: 'W)',
-        correct: 'Minato',
+        question: 'What muscle car is made by Chevorlet',
+        correct: 'Camaro',
         level: '100'
       },
       {
-        question: 'Who is Kiritos girlfriend?(F)',
-        correct: 'Asuna',
+        question: 'What does the shifter do?',
+        correct: 'Shift',
         level: '200'
       },
       {
-        question: 'How many kids does Goku and Chi Chi have?',
-        correct: '2',
+        question: 'What company makes the Mustang?',
+        correct: 'Ford',
         level: '300'
       },
       {
-        question: 'What is Gokus favorite move?',
-        correct: 'Kamehameha',
+        question: 'Who made the first car?',
+        correct: 'Karl Benz',
         level: '400'
       },
       {
-        question: 'What was Kirito called in Season 1?',
-        correct: 'Beater',
+        question: 'What company made the Vulcan?',
+        correct: 'Aston Marten',
         level: '500'
       },
       {
-        question: 'Who was Narutos first kiss?(F)',
-        correct: 'Sasuke',
+        question: 'What car has the land rcord for speed?',
+        correct: 'ThrustSSC',
         level: '600'
       },
       {
-        question: 'Who had the fourth Dragon Ball(F)?',
-        correct: 'Gohan',
+        question: 'Cars that are made for straight line speed?',
+        correct: 'Drag Car',
         level: '700'
       },
       {
-        question: 'Vegeta killd who before fighting Goku?(F)',
-        correct: 'Nappa',
+        question: 'What kind of car does Dominic Toretto drive?',
+        correct: '1970 Dodge Charger R11',
         level: '800'
       },
       {
-        question: 'Alucard backwards spells what?',
-        correct: 'Dracula',
+        question: 'What does Horsepower mean?',
+        correct: 'Engine Power',
         level: '900'
       },
       {
-        question: 'What is the number of copies did Alucard have to kill in order to be himself?',
-        correct: '3,424,867',
+        question: 'What car does Goku drive?',
+        correct: 'Messers schmitt KR',
         level: '1000'
       }
     ]
   },
   {
-    genre: "Music",
+    genre: "History",
     questions:[
       {
-        question: 'Who is in the music group Silk Sonic?',
-        correct: 'Anderson .Paak And Bruno Mars',
+        question: 'When did World War 1 take place?',
+        correct: '1914-1918',
         level: '100'
       },
       {
-        question: 'Who made the song Bad?',
-        correct: 'Michael Jackson',
+        question: 'When did World War 2 take place?',
+        correct: '1939-1945',
         level: '200'
       },
       {
-        question: 'What album did JID make this year?',
-        correct: 'The Forever Story',
+        question: 'When did the cold war happen?',
+        correct: '1947-1991',
         level: '300'
       },
       {
-        question: 'Who made the soundtrack for One Piece Film Red?',
-        correct: 'Ado',
+        question: 'What was the first ',
+        correct: 'Arquebus',
         level: '400'
       },
       {
-        question: 'What MJ album came out in 1979?',
-        correct: 'Off The Wall',
+        question: 'What year was the first American made?',
+        correct: 'Late 1500s',
         level: '500'
       },
       {
-        question: 'Metro Boomin came out with what new album?',
-        correct: 'Heroes And Villians',
+        question: 'When was the first game made?',
+        correct: '1958',
         level: '600'
       },
       {
-        question: 'Countryd look Good on you by Frank Ray came out in what year?',
-        correct: '2021',
+        question: 'When was the first anime made?',
+        correct: '1917',
         level: '700'
       },
       {
-        question: 'The new japanese song Shinunoga E-Wa who?',
-        correct: 'Fujii Kaze',
+        question: 'When was the first move made?',
+        correct: '1895',
         level: '800'
       },
       {
-        question: 'What song did Rihanna make for Black Panther?',
-        correct: 'Lift Me Up',
+        question: 'When was the first movie made?',
+        correct: '2550 To 2490 B.C',
         level: '900'
       },
       {
-        question: 'Fetty Wap made what song for Thanksgiving',
-        correct: 'Sweet Yamz',
+        question: 'When did slavery end?',
+        correct: '1865',
         level: '1000'
       }
     ]
   },
   {
-    genre: "Games",
+    genre: "Marvel",
     questions:[
       {
-        question: 'What game is Kratos from?',
-        correct: 'God Of War',
+        question: 'What is Spidermans real name?',
+        correct: 'Peter Parker',
         level: '100'
       },
       {
-        question: 'What game is Captain Price from?',
-        correct: 'Call Of Duty',
+        question: 'Who killed Uncle Ben?',
+        correct: 'Burglar',
         level: '200'
       },
       {
-        question: 'When you make a character it is called?',
-        correct: 'Create A Character',
+        question: 'How many spider man movies are there?',
+        correct: '9',
         level: '300'
       },
       {
-        question: 'The place you put your pokemon is called?',
-        correct: 'PC',
+        question: 'Tony Stark is known as who?',
+        correct: 'Iron Man',
         level: '400'
       },
       {
-        question: 'What do you do after hitting level 55 in Call of Duty?',
-        correct: 'Prestige',
+        question: 'Who is War Warmachine?',
+        correct: 'James Rhodes',
         level: '500'
       },
       {
-        question: 'What game does Freddy Frazbear come from?',
-        correct: "Five Nights At Freddy's",
+        question: 'When was Iron Man made?',
+        correct: "1963",
         level: '600'
       },
       {
-        question: 'How many Call of Duty games are there?',
-        correct: '42',
+        question: 'When was spider man made?',
+        correct: '1962',
         level: '700'
       },
       {
-        question: 'What animal is knuckles?',
-        correct: 'Echidna',
+        question: 'Who appeard in almost all movies?',
+        correct: 'Stan Lee',
         level: '800'
       },
       {
-        question: 'What group is the Overwatch character Reaper from?',
-        correct: 'Blackwatch',
+        question: 'When did Stan Lee die?',
+        correct: 'November 12, 2018',
         level: '900'
       },
       {
-        question: 'How many games has both Sonic and Mario been in?',
-        correct: '15',
+        question: 'How many marvel movies are there?',
+        correct: '39',
         level: '1000'
       }
     ]
   },
   {
-    genre: "Math",
+    genre: "Shoes",
     questions:[
       {
-        question: 'What is 1+1?',
-        correct: '2',
+        question: 'What shoe did Michael Jordan make?',
+        correct: 'Jordans',
         level: '100'
       },
       {
-        question: 'What is 2*4?',
-        correct: '8',
+        question: 'How many shoe brands brands are there?',
+        correct: '921',
         level: '200'
       },
       {
-        question: 'What is 8+5?',
-        correct: '13',
+        question: 'When was the first Nike made?',
+        correct: 'January 23, 1964',
         level: '300'
       },
       {
-        question: 'What is 6*7?',
-        correct: '42',
+        question: 'When was the first Jorden made?',
+        correct: 'April 1, 1985',
         level: '400'
       },
       {
-        question: 'What is 5*10+8?',
-        correct: '58',
+        question: 'When was Adidas founded?',
+        correct: 'August 18, 1949',
         level: '500'
       },
       {
-        question: 'What is 5*5*8?',
-        correct: '200',
+        question: 'Where was Adidas founded?',
+        correct: 'Germany',
         level: '600'
       },
       {
-        question: 'What is 2+4?',
-        correct: '6',
+        question: 'When wa Sketchers founded?',
+        correct: '1992',
         level: '700'
       },
       {
-        question: 'What is 6*7+5?',
-        correct: '47',
+        question: 'How many shoes are made each year?',
+        correct: '22 Billion',
         level: '800'
       },
       {
-        question: 'What is 10*0+85?',
-        correct: '85',
+        question: 'How may shoes does the average person own?',
+        correct: '20',
         level: '900'
       },
       {
-        question: 'What is 1*0?',
-        correct: '0',
+        question: 'What shoe company makes the most money?',
+        correct: 'Nike',
         level: '1000'
       }
     ]
   },
   {
-    genre: "Star Wars",
+    genre: "Misc",
     questions:[
       {
-        question: 'What color is the Mandalorian armor at the start of the show?',
-        correct: 'Red',
+        question: 'What is Gokus real name?',
+        correct: 'Kakarot',
         level: '100'
       },
       {
-        question: 'What color is Boba Fetts armor?',
-        correct: 'Green',
+        question: 'What genre of music is What Poppin by Jack Harlow?',
+        correct: 'Rap',
         level: '200'
       },
       {
-        question: 'What color is the Dark Saber?',
-        correct: 'Black',
+        question: 'What is 1+4?',
+        correct: '5',
         level: '300'
       },
       {
-        question: 'What color is Mace Windus lightsaber?',
-        correct: 'Purple',
+        question: 'What is From Softwares newest game?',
+        correct: 'Elden Ring',
         level: '400'
       },
       {
-        question: 'Who uses lightning as a weapon?',
-        correct: 'Emperor Palpatine',
+        question: 'Who is Miles Morales?',
+        correct: 'Spiderman',
         level: '500'
       },
       {
-        question: 'What bloodline is Rey from',
-        correct: 'Palpatine',
+        question: 'How many NBA players have shoes?',
+        correct: '22',
         level: '600'
       },
       {
-        question: 'Who also uses Reys lightsaber?',
-        correct: 'Finn',
+        question: 'How old is this school',
+        correct: '61',
         level: '700'
       },
       {
-        question: 'Who plays Lando Calrissian in Solo?',
-        correct: 'Donald Glover',
+        question: 'What is the newest Star Wars show?',
+        correct: 'Andor',
         level: '800'
       },
       {
-        question: 'What color are Ashokas lightsaber?',
-        correct: 'White',
+        question: 'What year was the Camaro made?',
+        correct: '1966',
         level: '900'
       },
       {
-        question: 'Who uses lightning as a weapon?',
-        correct: 'Emperor Palpatine',
+        question: 'Are you ready for Christmas?',
+        correct: 'Yes',
         level: '1000'
       }
     ]

@@ -81,3 +81,8 @@ body {
   padding: 5px;
   margin: 5px;
 }
+
+.J{
+  text-align: left;
+  display: flex;
+}
