@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="CSS/Game_Board.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html">Other page</a>
+      <a href="/Game.html">Game page</a>
+      <a href="/Leaderboard.html" aria-current="page">Leaderboard</a>
+    </nav>
+    <main>
+      <h1>Leaderboard: Top 10</h1>
+      <table border="1">
+			<tr>
+				<th>Player </th>
+				<th>Score </th>
+			</tr>
+			<tr>
+				<td id="player1n"></td>
+				<td id="ans1">0</td>
+			</tr>
+			<tr>
+				<td id="player1n"></td>
+				<td id="ans2">0</td>
+			</tr>
+			<tr>
+				<td id="player1n"></td>
+				<td id="ans3">0</td>
+			</tr>
+			<tr>
+				<td id="player1n"></td>
+				<td id="ans4">0</td>
+			</tr>
+			<tr>
+				<td id="player1n"></td>
+				<td id="ans5">0</td>
+			</tr>
+
+		</table>
+    </main>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+    <script type="module" src="JS/Leaderboard.js"></script>
+  </body>
+</html>
