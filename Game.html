@@ -4,10 +4,14 @@
     <title>Game page</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="CSS/Game_Board.css" />
-    <script src="Game.js"></script>
-
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
+    <main>
     <nav>
       <a href="/">Home</a>
       <a href="/page2.html">Other page</a>
@@ -15,8 +19,19 @@
     </nav>
     <h1>Jeopardy</h1>
     <div id="game"></div>
+    <form id="leaderboard">
+      <h2>Score: <span id="score"> 0 </span></h2>
+      <p>Enter Name: <input type = "text" id="name"></input> <button id="button">Submit</button> </p>
+  </form>
 
-    <h2>Score: <span id="score"></span></h2>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
 
     <script src="JS/Game.js"></script>
     </main>

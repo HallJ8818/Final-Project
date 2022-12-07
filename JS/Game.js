@@ -1,5 +1,39 @@
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAf7HDmlnl8F50XRn2i6KHvCdgd66ziEew",
+  authDomain: "csci-225-final.firebaseapp.com",
+  projectId: "csci-225-final",
+  storageBucket: "csci-225-final.appspot.com",
+  messagingSenderId: "476638522914",
+  appId: "1:476638522914:web:0587b2a354f5f3c26fe47b",
+  measurementId: "G-HSNP6N4LCN"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// save the data
+
+$("#button").click(function (e) {
+  e.preventDefault();
+
+  var score = $('#score').text();
+  console.log(score);
+  var name = $('#name').val();
+
+  // made the data
+  var data = {
+    Name: name,
+    Score: score
+  };
+
+  firebase.firestore().collection("Leaderboard").add(data);
+
+  // clear the entry //
+  $('form')[0].reset();
+});
+
 const game = document.getElementById('game');
-const scoreDisplay = document.getElementById('score-count');
+const scoreDisplay = document.getElementById('score');
 
 let score = 0;
 
@@ -9,31 +43,26 @@ const jeaopardyCategories = [
     questions:[
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '100'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '200'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '300'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '400'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '500'
       }
@@ -44,31 +73,26 @@ const jeaopardyCategories = [
     questions:[
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '100'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '200'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '300'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '400'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '500'
       }
@@ -79,31 +103,26 @@ const jeaopardyCategories = [
     questions:[
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '100'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '200'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '300'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '400'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '500'
       }
@@ -114,31 +133,26 @@ const jeaopardyCategories = [
     questions:[
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '100'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '200'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '300'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '400'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '500'
       }
@@ -149,31 +163,26 @@ const jeaopardyCategories = [
     questions:[
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '100'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '200'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '300'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '400'
       },
       {
         question: 'Who wrote Harry Potter?',
-        answers: ['JK Rowling', 'JRR Tolkien'],
         correct: 'JK Rowling',
         level: '500'
       }
@@ -234,6 +243,7 @@ function flipCard(){
   textDisplay.innerText = this.getAttribute('data-question')
   const textBox = document.createElement('input');
   textBox.setAttribute('type', 'text');
+  textBox.setAttribute('id', 'box');
   textBox.classList.add('text-box');
   const submit = document.createElement('button');
   submit.setAttribute('type', 'submit');
@@ -247,17 +257,17 @@ function flipCard(){
 }
 
 function getResult(){
+  const answer = document.getElementById("box").value;
+
   const allCards = Array.from(document.querySelectorAll('.card'));
   allCards.forEach(card => card.addEventListener('click', flipCard));
 
   const cardOfButton = this.parentElement;
-  const answer = document.getElementsByClassName("text-box").value;
 
   console.log(answer);
 
   console.log(cardOfButton);
 
-  // does not read answer value, declares it as undefined
   if(cardOfButton.getAttribute('data-correct') == answer){
     score = score + parseInt(cardOfButton.getAttribute('data-value'));
     scoreDisplay.innerText = score;
